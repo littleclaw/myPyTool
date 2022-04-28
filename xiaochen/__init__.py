@@ -1,4 +1,19 @@
-#  range()方法， 递归方法，文件读、写、二进制文件
-# 复习内容：字符串+表示拼接，除法，整数除，求余% 求几次方，求几次方根
+# from:a  by:b  to:c
+import os
+
+
+# n 表示有几层塔， a 为起始点名，b为中间点名，c为目标点名
+def hanno(n, a, b, c):
+    if n == 1:
+        print(a + "-->" + c)
+    else:
+        hanno(n - 1, a, c, b)
+        print(a + "-->" + c)
+        hanno(n - 1, b, a, c)
+
+
 if __name__ == '__main__':
-    pass
+    # hanno(5, "A", "B", "C")
+    for f_name in os.listdir("D:\\WeChat"):
+        print(f_name)
+

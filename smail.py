@@ -7,7 +7,8 @@ from email.utils import parseaddr, formataddr
 
 from_addr = 'lttclaw@qq.com'
 password = 'hwpzapzrkmgpgaba'
-to_addr = ['543426680@qq.com', 'lttclaw@qq.com']
+# to_addr = ['543426680@qq.com', 'lttclaw@qq.com']
+to_addr = ['lttclaw@qq.com']
 smtp_server = 'smtp.qq.com'
 
 
